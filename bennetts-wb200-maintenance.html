@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Bennetts WB200 Maintenance</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+<style>
+:root { --bennetts-green: #1E5666; --bg-light: #f5f5f5; --card-bg: #ffffff; --accent: #e0f0f2; }
+body { margin: 0; font-family: Arial, sans-serif; background: var(--bg-light); }
+.app { max-width: 480px; margin: auto; background: var(--bg-light); }
+.app-header { padding: 12px; display: flex; align-items: center; background: var(--bennetts-green); color:#fff; }
+.logo-placeholder { width: 40px; height: 40px; border-radius: 50%; border:2px solid #fff; display:flex; justify-content:center; align-items:center; margin-right:10px; }
+.tab { padding: 8px; margin: 5px; border-radius: 20px; border: 1px solid #ccc; display:inline-block; }
+.tab.active { background: var(--bennetts-green); color:#fff; }
+.card { background:#fff; padding:15px; margin:10px; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
+.check-shell { width: 24px; height: 24px; border-radius:6px; border:2px solid var(--bennetts-green); display:inline-flex; justify-content:center; align-items:center; cursor:pointer; margin-right:10px; }
+.check-shell.checked { background: var(--bennetts-green); color:#fff; }
+</style>
+</head>
+<body>
+
+<div class="app">
+<div class="app-header">
+  <div class="logo-placeholder">B</div>
+  <h1>Bennetts Sawmill – WB200 Mobile UI</h1>
+</div>
+
+<div style="padding:10px;">
+  <div class="tab active">Daily</div>
+  <div class="tab">Weekly</div>
+  <div class="tab">Monthly</div>
+  <div class="tab">Blade</div>
+  <div class="tab">Faults</div>
+  <div class="tab">Shift</div>
+</div>
+
+<div class="card">
+  <div class="check-shell"><span>✓</span></div>
+  Check blade condition
+</div>
+
+<div class="card">
+  <div class="check-shell"><span>✓</span></div>
+  Inspect pantograph & cables
+</div>
+
+<div class="card">
+  <div class="check-shell"><span>✓</span></div>
+  End-of-shift track cleaning
+</div>
+
+</div>
+
+</body>
+</html>
